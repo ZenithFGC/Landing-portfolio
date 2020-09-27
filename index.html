@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Дмитрий Алексеев Frontend-разработчик</title>
+        <link rel="stylesheet" href="swiper.min.css">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script src="https://use.fontawesome.com/dd1a44e7ec.js"></script>
+        <script src="jquery-3.4.1.min.js"></script>
+        <script src="script.js"></script>
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+        <link rel="manifest" href="favicon/site.webmanifest">
+        <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+    </head>
+    <body>
+        <div class="modal">
+            <div class="modal__background"></div>
+            <div class="nav__background"></div>
+            <div class="container">
+                <div class="window modal__order">
+                    <form name="modal" class="modal__form modal__form_order">
+                        <input type="hidden" name="project_name" value="Тест">
+                        <input type="hidden" name="admin_email" value="catkeaids@yandex.ru">
+                        <input type="hidden" name="form_subject" value="Тема">
+                        <p>Введите ваш номер:</p>
+                        <input type="tel" name="телефон" maxlength="20" minlength="6" placeholder="+7(___) ___-____" size="16" class="modal__input">
+                        <p>Укажите время, в которое вам можно перезвонить:</p>
+                        <p>C</p><input type="time" class="modal__input" name = "from"><p>До</p><input type="time" class="modal__input" name = "to">
+                        <input type="submit" class="modal__submit modal__submit_order">
+                    </form>
+                </div>
+                <div class="window modal__success">
+                    <h4>Спасибо, Ваша заявка принята! Ожидайте звонка.</h4>
+                </div>
+            </div>
+         </div>
+        <header class="header" >
+            <div class="container header__container">
+                <nav class="nav header__nav">
+                        <button class="burger header__burger button-reset"></button>
+                        <ul class="nav__burger-list list-reset">
+                            <li class="nav__burger-item"><a href="#one" class="nav__link nav__item_offering">Услуги</a></li>
+                            <li class="nav__burger-item"><a href="#two" class="nav__link">Портфолио</a></li>
+                            <li class="nav__burger-item"><a href="#three" class="nav__link">Стоимость</a></li>
+                        </ul>
+                        <ul class="nav__list list-reset">
+                            <li class="nav__item"><a href="#one" class="nav__link nav__item_offering">Услуги</a></li>
+                            <li class="nav__item"><a href="#two" class="nav__link">Портфолио</a></li>
+                            <li class="nav__item"><a href="#three" class="nav__link">Стоимость</a></li>
+                        </ul>
+                </nav>
+                <a href="tel:84999955577" class="phone header__phone">+7 (499) 995-55-77</a>
+                <button class="button header__button button-reset button_border">Заказать звонок</button>
+            </div>
+        </header>
+            <main>
+                <section class="person">
+                    <span class="tag person__tag person__tag_braces animation">{&nbsp;}</span>
+                    <span class="tag person__tag person__tag_hash animation">#</span>
+                    <span class="tag person__tag person__tag_closed animation">&lt;/&gt;</span>
+                    <span class="tag person__tag person__tag_closed-two animation">&lt;/&gt;</span>
+                    <span class="tag person__tag person__tag_div-one animation">&lt;div&gt;</span>
+                    <span class="tag person__tag person__tag_div-two animation">&lt;div&gt;</span>
+                    <div class="container person__container">
+                        <div class="about-me">
+                            <h1 class="about-me__name">Дмитрий Алексеев
+                            <span class="about-me__name_descrip">Frontend-разработчик и веб-верстальщик</span></h1>
+                            <button class="button about-me__button button-reset button-fill">Узнать больше</button>
+                        </div>
+                        <img src="img/Shutterstock_574398823@1X.png" alt="my photo" class="person__photo">
+                    </div>
+                    <picture>
+                        <source media="(max-width:576px)" srcset="img/ellipse-mob.png" >
+                        <source media="(max-width:1440px)" srcset="img/ellipse-tab.png">
+                        <img src="img/ellipse.svg" alt="ellipse" class="person__figure" aria-hidden="true">
+                    </picture>
+
+                    </section>
+                <section class="offering" id="one">
+                    
+                    <div class="container offering__container">
+                        <h2 class=" title offering__title">Что я делаю</h2>
+                        <div class="skills">
+                            <ul class="skills__list">
+                                <li class="skills__item skills__item_landing" >
+                                Верстка лендинг&#8211;страниц и сайтов любой сложности</li>
+                                <li class="skills__item skills__item_adaptive">
+                                Адаптивная верстка под все браузеры и устройства</li>
+                                <li class="skills__item skills__item_coding">
+                                Frontend&#8211;разработка и программирование</li>
+                                <li class="skills__item skills__item_rework">
+                                Исправление и доработка существующей верстки</li>
+                            </ul>
+                        </div>
+                        <button class="button offering__button button-reset button-fill">Узнать стоимость</button>
+                    </div>
+                </section>
+                <section class="examples" id="two">
+                    <div class="container examples__container slider-container">
+                        <h2 class="title examples__title">Примеры моих работ</h2>
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide card"><img src="img/slider-item1.png" alt="" class="slider__image">
+                                    <span class="slider__text">Сайт психолога Веры Антоновой</span>
+                                </div>
+                                <div class="swiper-slide card"><img src="img/slider-item2.png" alt="" class="slider__image">
+                                    <span class="slider__text">Сайт магазина детской одежды</span>
+                                </div>
+                                <div class="swiper-slide card"><img src="img/slider-item3.png" alt="" class="slider__image">
+                                    <span class="slider__text">Сайт магазина 	&#171;Рыболов&#187;</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination slider__circles"></div>
+                        <button class="swiper-button-prev arrow slider__arrow_left"></button>
+                        <button class="swiper-button-next arrow slider__arrow_right"></button>
+                        <button class="button examples__button button-reset button-fill">Заказать проект</button>
+                    </div>
+                </section>
+                <section class="price" id="three">
+                    <span class="tag price__tag price__tag_braces-one">{&nbsp;}</span>
+                    <span class="tag price__tag price__tag_hash">#</span>
+                    <span class="tag price__tag price__tag_braces-two">{&nbsp;}</span>
+                    <span class="tag price__tag price__tag_closed">&lt;/&gt;</span>
+                    <span class="tag price__tag price__tag_div">&lt;div&gt;</span>
+                    <div class="price__container">
+                        <div class="price__title">
+                            <h2 class="price__text price__text_main"> Адаптивная вёрстка под все устройства<br> и браузеры от 1000 рублей всего за&nbsp;4&nbsp;часа.*</h2>
+                            <p class="price__text price__text_remark">* Срок и стоимость могут отличаться от заявленных и рассчитываются  индивидуально,<br> &nbsp;&nbsp;в зависимости от сложности задач.</p>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        <footer>
+            <div class="bottom">
+                <div class="container bottom__container">
+                    <nav class="nav bottom__nav">
+                        <ul class="bottom__list list-reset">
+                            <li class="bottom__item"><a href="#one" class="bottom__link">Услуги</a></li>
+                            <li class="bottom__item"><a href="#two" class="bottom__link">Портфолио</a></li>
+                            <li class="bottom__item"><a href="#three" class="bottom__link">Стоимость</a></li>
+                        </ul>
+                    </nav>
+                    <address class="contacts">
+                        <a href="tel:84999955577" class="contacts__link contacts__link_phone"><span class="fa fa-phone fa-lg" aria-hidden="true"></span>+7 (499) 995-77-55
+                        </a>
+                        <a href="mailto:alekseev@mail.ru" class="contacts__link contacts__link_email">
+                            <span class="fa fa-envelope fa-lg" aria-hidden="true"></span>dmitry@alekseev.com
+                        </a>
+                    </address>
+                    <div class="phone-and-networks">
+                        <button class="button  bottom__button button-reset button_border" >Заказать звонок</button>
+                        <ul class="networks">
+                            <li class="networks__item"><a href="https://vk.com/" target="_blank" class="vk networks__link"></a></li>
+                            <li class="networks__item"><a href="https://www.facebook.com/" target="_blank" class="facebook networks__link"></a></li>
+                            <li class="networks__item"><a href="https://twitter.com/home" target="_blank" class="twitter networks__link"></a></li>
+                            <li class="networks__item"><a href="https://www.instagram.com/" target="_blank" class="inst networks__link"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="copyright__text">
+                    © Дмитрий Алексеев, 2016 – 2018
+                    </div>
+                </div>
+        </footer>
+        <script src="swiper.min.js"></script>
+        <script src="slider.js"></script>
+        <script src="jquery.inputmask.min.js"></script>
+        <script src="jquery.validate.min.js"></script>
+        <script>
+
+
+           $('input[type="tel"]').inputmask({"mask": "+7(999) 999-9999"});
+
+           $('.modal__form').validate({
+               errorPlacement(error, element) {
+                   return true;
+               },
+                rules: {
+                    телефон: {
+                        required: true,
+                    }
+                },
+                submitHandler(form) {
+                    let th = $(form);
+
+                    $.ajax({
+                        type: 'POST',
+                        url: 'mail.php',
+                        data: th.serialize(),
+                    }).done(() => {
+
+                        console.log('Отправлено');
+
+                        th.trigger('reset');
+                    });
+
+                    return false;
+                },
+                submitHandler: function() {
+                    $(".modal__success").show();
+                    $(".modal__success").css({'opacity': 1,
+                                              'top': '50%' });
+                    $(".modal__order").hide();
+                }
+                    
+            });
+           
+        </script>
+    </body>
+</html>
