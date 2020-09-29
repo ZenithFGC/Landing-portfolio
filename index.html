@@ -188,8 +188,13 @@
                         required: true,
                     }
                 },
-                submitHandler(form) {
+                submitHandler: function(form) {
                     let th = $(form);
+
+                    $(".modal__success").show();
+                    $(".modal__success").css({'opacity': 1,
+                                              'top': '50%' });
+                    $(".modal__order").hide();
 
                     $.ajax({
                         type: 'POST',
@@ -203,14 +208,7 @@
                     });
 
                     return false;
-                },
-                submitHandler: function() {
-                    $(".modal__success").show();
-                    $(".modal__success").css({'opacity': 1,
-                                              'top': '50%' });
-                    $(".modal__order").hide();
                 }
-                    
             });
            
         </script>
