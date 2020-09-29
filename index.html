@@ -189,12 +189,14 @@
                     }
                 },
                 submitHandler: function(form) {
-                    let th = $(form);
+                    let th = $(form),
+                        successWindow = $(".modal__success"),
+                        orderWindow = $(".modal__order");
 
-                    $(".modal__success").show();
-                    $(".modal__success").css({'opacity': 1,
+                    successWindow.show();
+                    successWindow.css({'opacity': 1,
                                               'top': '50%' });
-                    $(".modal__order").hide();
+                    orderWindow.hide();
 
                     $.ajax({
                         type: 'POST',
